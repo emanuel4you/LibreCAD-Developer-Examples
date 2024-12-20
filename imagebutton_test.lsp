@@ -16,7 +16,7 @@
         (exit)                                                  ; exit if no dialog
     )                                                           ; if
     (setq width (dimx_tile "img0")                              ; get the image width
-            height (dimy_tile "img0")                           ; get the image height
+          height (dimy_tile "img0")                             ; get the image height
     )                                                           ; end of setq
     (princ width)
     (princ width)

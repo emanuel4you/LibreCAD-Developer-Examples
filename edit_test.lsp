@@ -9,6 +9,7 @@
 (prompt "\nType \"edittest\" to run...")
 
 (defun c:edittest(/ dcl_id)                                                               ;; define function dcl_id = privat variable
+    (setq name nil)    
     (setq dcl_id (load_dialog "test/edit_test.dcl"))                                      ;; load dialog
     (if (not (new_dialog "edit_test" dcl_id))                                             ;; test for dialog
         (exit)                                                                            ;; exit if no dialog
