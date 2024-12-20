@@ -30,35 +30,35 @@
     (fill_image 0 0 width height 30)
     (end_image)
 
-    (setq	width (dimx_tile "img2")
+    (setq width (dimx_tile "img2")
         height (dimy_tile "img2")
     )                                                           ; end of setq
     (start_image "img2")
     (fill_image 0 0 width height 2)
     (end_image)
 
-    (setq	width (dimx_tile "img3")
+    (setq width (dimx_tile "img3")
         height (dimy_tile "img3")
     )                                                           ; end of setq
     (start_image "img3")
     (fill_image 0 0 width height 3)
     (end_image)
 
-    (setq	width (dimx_tile "img4")
+    (setq width (dimx_tile "img4")
         height (dimy_tile "img4")
     )                                                           ; end of setq
     (start_image "img4")
     (fill_image 0 0 width height 4)
     (end_image)
 
-    (setq	width (dimx_tile "img5")
+    (setq width (dimx_tile "img5")
         height (dimy_tile "img5")
     )                                                           ; end of setq
     (start_image "img5")
     (fill_image 0 0 width height 5)
     (end_image)
 
-    (setq	width (dimx_tile "img6")
+    (setq width (dimx_tile "img6")
         height (dimy_tile "img6")
     )                                                           ; end of setq
     (start_image "img6")
