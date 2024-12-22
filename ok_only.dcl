@@ -6,7 +6,7 @@
 // Please read the LICENSE file for additional information.
 //
 
-ok_only                             // dialog name
+ok_only_dlg                         // dialog name
 : dialog
 {
     label = "Ok only Test";         // give it a label

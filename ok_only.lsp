@@ -9,15 +9,11 @@
 (prompt "\nType \"okonly\" to run...")
 (defun c:okonly()                                        ;; define function
     (setq dcl_id (load_dialog "test/ok_only.dcl"))       ;; load dialog
-    (if (not (new_dialog "ok_only" dcl_id)               ;; test for dialog
+    (if (not (new_dialog "ok_only_dlg" dcl_id)           ;; test for dialog
         )                                                ;; not
         (exit)                                           ;; exit if no dialog
     )                                                    ;; if
-    (action_tile
-        "cancel"                                         ;; if cancel button pressed
-        "(done_dialog) (setq userclick nil)"             ;; close dialog, set flag
-    )                                                    ;; action_tile
-    (action_tile
+    (action_tile                                         ;; action_tile
         "accept"                                         ;; if OK pressed
         "(done_dialog)(setq userclick T))"               ;; close dialog, set flag
     )                                                    ;; action tile

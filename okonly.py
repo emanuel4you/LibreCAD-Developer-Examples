@@ -19,12 +19,11 @@ userClick = False
 def okOnly():
     dcl_id = mydcl.loadDialog("test/ok_only.dcl")
     
-    if mydcl.newDialog("ok_cancel", dcl_id) == False:
+    if mydcl.newDialog("ok_only_dlg", dcl_id) == False:
         print("[okOnly] Error: can not load gui!")
         return
     
     mydcl.actionTile("accept", "(py-simple-string \"mydcl.doneDialog()\nuserClick = True\")")
-    mydcl.actionTile("cancel", "(py-simple-string \"mydcl.doneDialog()\nuserClick = False\")")
     
     mydcl.startDialog()
     mydcl.unloadDialog(dcl_id)

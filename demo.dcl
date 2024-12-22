@@ -8,40 +8,52 @@
 
 // SPDX-License-Identifier: 0BSD
 
-demo_dlg : dialog {
+demo_dlg 
+: dialog 
+{
   label = "DCL Demo";
-  : row {
-    : column {
-      : text {
+  : row 
+  {
+    : column 
+    {
+      : text 
+      {
         alignment = centered;
         label = "Names";
         is_bold = true;
       }
-      : list_box {
+      : list_box 
+      {
         key = "listbox_names";
         width = 30;
         height = 43;
       }
     }
-    : column {
-      : row {
-        : text {
+    : column 
+    {
+      : row 
+      {
+        : text 
+        {
           label = "DCL File";
           is_bold = true;
         }
-        : text {
+        : text 
+        {
           key = "text_dcl";
           label = "";
           width = 50;
         }
-        : button {
+        : button 
+        {
           key = "button_dcl";
           label = "&Open";
           width = 10;
           fixed_width = true;
         }
       }
-      : row {
+      : row 
+      {
         : list_box {
           key = "listbox_dcl";
           width = 100;
@@ -49,25 +61,31 @@ demo_dlg : dialog {
         }
       }
 
-      : row {
-        : text {
+      : row 
+      {
+        : text 
+        {
           label = "LSP File";
           is_bold = true;
         }
-        : text {
+        : text 
+        {
           key = "text_lsp";
           label = "";
           width = 50;
         }
-        : button {
+        : button 
+        {
           key = "button_lsp";
           label = "O&pen";
           width = 10;
           fixed_width = true;
         }
       }
-      : row {
-        : list_box {
+      : row 
+      {
+        : list_box 
+        {
           key = "listbox_lsp";
           width = 100;
           height = 18;
@@ -76,9 +94,12 @@ demo_dlg : dialog {
     }
   }
 
-  : row {
-    : column {
-      : button {
+  : row 
+  {
+    : column 
+    {
+      : button 
+      {
         alignment = left;
         key = "button_run";
         label = "&Run";
@@ -87,8 +108,10 @@ demo_dlg : dialog {
       }
     }
 
-    : column {
-      : cancel_button {
+    : column 
+    {
+      : cancel_button 
+      {
         alignment = right;
         key = "button_exit";
         label = "E&xit";

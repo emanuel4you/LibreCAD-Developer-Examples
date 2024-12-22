@@ -8,9 +8,9 @@
 ;; AUTOLISP CODING STARTS HERE
 (prompt "\nType \"okcancel\" to run...")
     
-(defun c:okcancel ()                                    ;; define function
+(defun c:okcancel()                                      ;; define function
     (setq dcl_id (load_dialog "test/ok_cancel.dcl"))     ;; load dialog
-    (if (not (new_dialog "ok_cancel_dlg" dcl_id)              ;; test for dialog
+    (if (not (new_dialog "ok_cancel_dlg" dcl_id)         ;; test for dialog
         )                                                ;; not
         (exit)                                           ;; exit if no dialog
     )                                                    ;; if
