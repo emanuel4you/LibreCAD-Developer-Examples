@@ -51,8 +51,9 @@
             (set_tile "error" "Invalid Age - Please Try Again!")
             (mode_tile "age" 2)
         )                                                                                ;; progn
-        (setq sepp (done_dialog))
+        (done_dialog)
     )                                                                                    ;; if
+    (princ)
 )                                                                                        ;; defun
 
 (princ)
