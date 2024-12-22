@@ -18,7 +18,7 @@ age = -1
 mygui.prompt("Type \"editTest()\" to start...")
 
 def val2():
-    if int(mydcl.getTile("age")) < 1:
+    if mydcl.getTile("age") == "" or int(mydcl.getTile("age")) < 1:
         mydcl.setTile("error", "Invalid Age - Please Try Again!")
         mydcl.modeTile("age", 2)
     else:
@@ -46,4 +46,4 @@ def editTest():
     
     mydcl.startDialog()
     mydcl.unloadDialog(dcl_id)
-    mygui.MessageBox("Your name is " + name + "\nand you are " + age + " years of age.")
+    mygui.MessageBox("Your name is " + name + "\nand you are " + str(age) + " years of age.")

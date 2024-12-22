@@ -49,7 +49,7 @@ def imageTest():
     mydcl.pixImage(20, 20, 50, 50, "test/librecad.png")
     mydcl.pixImage(40, 40, 30, 30, "test/pen_apply.svg")
     mydcl.pixImage(60, 60, 20, 20, "test/pen_apply.svg")
-    mydcl.textImage(0, 5, 100, 100, "Hallo", 7)
+    mydcl.textImage(0, 5, 10, 100, "Hallo", 7)
     mydcl.textImage(10, 80, 100, 50, "LibreCAD", 245)
     mydcl.textImage(10, 50, 40, 50, "Python!", 3)
     mydcl.endImage()

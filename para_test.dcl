@@ -28,7 +28,7 @@ para_test                                       // dialog name
             label = "by LibreCAD";              // some more text
             height = 10;
         }                                       // end text
-	: text_part                             // define text_part
+        : text_part                             // define text_part
         {
             label = "©";                        // some more text
             height = 5;

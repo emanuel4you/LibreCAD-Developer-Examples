@@ -9,7 +9,7 @@
 (prompt "\nType \"edittest\" to run...")
 
 (defun c:edittest(/ dcl_id)                                                               ;; define function dcl_id = privat variable
-    (setq name nil)    
+    (setq name nil age nil)  
     (setq dcl_id (load_dialog "test/edit_test.dcl"))                                      ;; load dialog
     (if (not (new_dialog "edit_test" dcl_id))                                             ;; test for dialog
         (exit)                                                                            ;; exit if no dialog
@@ -51,7 +51,7 @@
             (set_tile "error" "Invalid Age - Please Try Again!")
             (mode_tile "age" 2)
         )                                                                                ;; progn
-        (done_dialog)
+        (setq sepp (done_dialog))
     )                                                                                    ;; if
 )                                                                                        ;; defun
 
