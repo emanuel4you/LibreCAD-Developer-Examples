@@ -8,7 +8,7 @@
 ;; AUTOLISP CODING STARTS HERE
 (prompt "\nType \"listtest\" to run...")
     
-(defun c:testlist()                                                                         ;; define function
+(defun c:listtest()                                                                         ;; define function
     (setq DAYS '("Monday" "Tuesday" "Wednesday" "Thursday" "Friday" "Saturday" "Sunday"))   ;; setq
     (setq dcl_id (load_dialog "test/list_test.dcl"))                                        ;; load dialog
             

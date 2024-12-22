@@ -19,6 +19,7 @@ edit_test
         alignment = centered;
         edit_limit = 30;
         edit_width = 30;
+        password_char = "*";
     }
     : edit_box
     {
