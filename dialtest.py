@@ -44,6 +44,6 @@ def dialTest():
     mydcl.unloadDialog(dcl_id)
 
     if userClick:
-         mygui.MessageBox("You Selected: " + length)
+         mygui.MessageBox("You Selected: %d" %length)
     else:
          print("[dialTest] Cancel pressed")
