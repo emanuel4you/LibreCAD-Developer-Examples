@@ -25,7 +25,7 @@ def pyTest():
         return
     
     mydcl.actionTile("button_python", "(py-simple-string \"btnPython()\")")
-    mydcl.actionTile("accept", "(py-simple-string \"winPos = mygui.doneDialog(2)\")")
+    mydcl.actionTile("accept", "(py-simple-string \"winPos = mydcl.doneDialog(2)\")")
     
     print("[mydcl.startDialog] result: ", mydcl.startDialog())
     print("[dialog] pos: x=%i y=%i" %(winPos[0], winPos[1]))
